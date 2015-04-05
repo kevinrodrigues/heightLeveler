@@ -1,0 +1,116 @@
+// /* Welcome to Compass.
+//  * In this file you should write your main styles. (or centralize your imports)
+//  * Import this file using the following HTML or equivalent:
+//  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+
+body {
+	background:#7db9e8;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+	font-size: 12px;
+	color:#fff;
+}
+
+.wrapper {
+	width:980px;
+	margin:0 auto;
+	h1 {
+		text-align:center;
+		font-weight:200;
+		margin-bottom:0;
+		 @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
+		span {
+			color:#1E5799;
+			font-weight:bold;
+		}
+	}
+	p {
+		text-align:center;
+		margin:0;
+	}
+}
+
+.main-content {
+	clear:both;
+	margin:15px 0 0 0;
+	padding:20px;
+	overflow:hidden;
+	background:#8ab66b;
+	@include border-radius(10px);
+	@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+	.button-group {
+		clear:both;
+		overflow:hidden;
+		margin:0 0 0 60px;
+	}
+	a {
+		display: block;
+		float:left;
+		cursor:default;
+		text-align:center;
+		text-decoration:none;
+		color:#333;
+		line-height:20px;
+		margin:10px;
+		padding:10px;
+		width:120px;
+		font-weight:bold;
+		@include border-radius(10px);
+		@include background-image(linear-gradient(white, #cccccc, #aaaaaa));
+		@include box-shadow(rgba(black, 0.4) 0 0 5px, rgba(black, 0.2) 0 0 1px 1px inset);
+	}
+	.control {
+		overflow:hidden;
+		clear:both;
+		.apply, .reset {
+			float: right;
+			cursor:pointer;
+  			@include background-image(linear-gradient(#87bcea, #0a77d5, #d0e4f7));
+  			color:#fff;
+  			margin:30px 5px 5px 0;
+  			&:hover {
+				@include background-image(linear-gradient(#d0e4f7, #0a77d5, #87bcea));
+			}
+		}
+	}
+	.content-group {
+		clear:both;
+		margin:15px 0 0 0;
+		overflow:hidden;
+		.left-group, .right-group {
+			margin:20px 0 0 0;
+			width:410px;
+			@include border-radius(10px);
+			@include box-shadow(rgba(black, 0.4) 0 0 5px, rgba(black, 0.2) 0 0 1px 1px inset);
+			@include background-image(linear-gradient(#606c88, #3f4c6b));
+			padding:20px;
+		}
+		.left-group {
+			float: left;
+		}
+		.right-group {
+			float: right;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
