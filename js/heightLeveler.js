@@ -26,22 +26,22 @@ var heightAdjuster = function () {
 }();
 
 $(function () {
-    $('.control.button .apply').click(function (e) {
+    $('.control.button .apply').on('click', function (e) {
         e.preventDefault();
         heightAdjuster.levelOut($('.button-group > a'));
     });
 
-    $('.control.button .reset').click(function (e) {
+    $('.control.button .reset').on('click', function (e) {
         e.preventDefault();
         $(this).parents('.main-content').find('.button-group > a').css({"height": ""});
     });
 
-    $('.control.content > .apply').click(function (e) {
+    $('.control.content > .apply').on('click', function (e) {
         e.preventDefault();
         heightAdjuster.levelOut($('.content-group .left-group, .right-group'));
     });
 
-    $('.control.content > .reset').click(function (e) {
+    $('.control.content > .reset').on('click', function (e) {
         e.preventDefault();
         $('.content-group').find('.left-group, .right-group').css({"height": ""});
     });
